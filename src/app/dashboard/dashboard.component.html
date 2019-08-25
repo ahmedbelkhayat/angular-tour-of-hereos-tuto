@@ -1,0 +1,15 @@
+ 
+ <h2>CHAMPIONS</h2>
+ <div class = "wrapper">
+  <a *ngFor="let hero of heroes"  routerLink="/detail/{{hero.id}}">  
+  <div class= "container">
+    
+     <div class ="pic" [ngStyle]="{'background-image': 'url(' + hero.pic + ')'}"></div>
+     <div class = "score">    
+        {{hero.name}}
+        <br />
+      {{hero.score}} pts 
+     </div>  
+  </div>
+</a>
+ </div>

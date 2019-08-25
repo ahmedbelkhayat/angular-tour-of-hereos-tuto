@@ -1,0 +1,11 @@
+<h2>My Heroes</h2>
+<div class ="wrapper">
+<ul class="heroes">
+  <li  *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <div class ="pic" [ngStyle]="{'background-image': 'url(' + hero.pic + ')'}"> </div> 
+        <span class="name">{{hero.name}}</span>
+     </a>
+  </li>
+</ul>
+</div>

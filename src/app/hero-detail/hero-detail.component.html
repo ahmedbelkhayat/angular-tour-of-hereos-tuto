@@ -1,0 +1,40 @@
+<div *ngIf="hero" class ="row">
+<div class ="col-1">
+  <div class="race">
+   <div class= "score">
+     Points
+      <br />
+      {{hero.score}} pts 
+   </div> 
+  </div>
+  <div class= "block">
+      Friends 
+    </div> 
+<div class ="friends">
+
+ <div *ngFor= "let friend of friends" class ="friend"> 
+    <a routerLink="/detail/{{friend.id}}">
+
+        <div class ="pic" [ngStyle]="{'background-image': 'url(' + friend.pic + ')'}"> </div> 
+        <div class="name">{{friend.name}}</div>
+    </a>
+</div>
+</div>
+</div>
+     
+<div  class ="details">
+  <div class ="identity">
+    <div class ="pic" [ngStyle]="{'background-image': 'url(' + hero.pic + ')'}"> </div>
+    <div class="name2">{{hero.name}}</div>
+  </div> 
+  <div class ="bio">
+    <h2 id="biog">Biography</h2> 
+   <p id="text">{{hero.bio}}</p> 
+  </div>
+  </div>
+  
+  </div>
+<div class ="boutonContainer">
+  <button class="go" (click)="goBack()">go back</button>
+  <button class="go" (click)="goBack()">save</button>
+</div>

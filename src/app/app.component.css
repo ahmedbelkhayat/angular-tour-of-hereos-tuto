@@ -1,0 +1,43 @@
+/*------------------------------------------------*/
+/*                       navBar                 */
+/*------------------------------------------------*/
+.navBar i{
+	font-size: 1.1em;
+	margin-right: 10px;
+	
+  }
+.crea{
+	margin-right: auto;
+	font-size:1.5em;
+	text-transform: uppercase;
+	font-family: Future TimeSplitters;
+	
+}
+a {
+	text-decoration: none;
+	color:#c9aa71;
+  	font-size: 1.1em;
+}
+ .navBar li:not(:first-child){
+	margin-right: 20px;
+  }
+ .navBar {
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	list-style: none;
+	display:flex;
+	height: 70px;
+	margin:0;
+  	align-items: center;
+  	color:#c9aa71;
+  	font-size: 1.1em;
+	background:	#171A22;
+	border-color:  #c9aa71;
+	border-bottom-style: solid;
+	border-width: 1px;
+
+  }
+
+  
